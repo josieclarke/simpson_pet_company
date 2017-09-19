@@ -1,0 +1,310 @@
+
+--------------------------------------------------
+
+CSE HTML Validator Standard v17.04 (Registered)
+Checking "C:\Users\drew.geisert\Documents\simpson_pet_company\public_html\about.html" (1418 characters).
+File date is Tuesday, September 19, 2017 at 9:20:33 AM.
+File checked on Tuesday, September 19, 2017 at 9:22:20 AM.
+
+     Number of lines checked: 36 in 0.00 seconds
+ Number of lines in document: 36 (100.0% of lines checked)
+     Number of lines ignored: 0
+Number of character entities: 1
+        Number of start tags: 22
+          Number of end tags: 19 (86.4% of start tags with end tags)
+Number of <% ... %> sections: 0
+     Number of HTML comments: 2
+
+Number of validator comments: 13
+          Number of messages: 8
+            Number of errors: 0
+          Number of warnings: 3
+
+--------------------------------------------------
+
+[CSE] Warning number 1:
+Possibly misspelled word (1, 1 unique): Indianolan (1x).
+Complete list. 141 total words checked (0 in comments).
+
+   1: <!-- The Navigator of this page was Josh O'Connor -->
+   2: <!-- The Typer of this page was Matt Taylor -->
+   3: 
+
+   4: <!DOCTYPE html>
+-------|||||||||||||
+
+[CSE] Message number 1 in line 4:2:
+An HTML5 DOCTYPE was found. HTML5 (sometimes called just
+HTML) is in a constant state of flux. While many parts of
+HTML5 are considered stable and safe to use, there are parts
+that are not stable or that may not be well supported by
+browsers. When using HTML5, be sure to understand the
+potential problems when using parts and features that may
+not be stable (and thus may change in the future) or that
+may not be widely supported. Visit
+https://www.htmlvalidator.com/help.php?m=3&h=safetouse for
+information about what is safe to use.
+
+   5: <html lang="en">
+   6: 
+   7: <head>
+   8:     <link rel="stylesheet" type="text/css" href="css_drew_geisert_css.css">
+
+   9:     <meta charset="utf-8">
+-----------||||||||||||||||||||
+
+[CSE] Warning number 2 in line 9:6:
+It is highly recommended that the meta charset tag be the
+first child of the head tag. Consider moving this tag up so
+it is immediately after the "head" start tag.
+
+  10: <title>About</title>
+-------------|||||
+
+[CSE] Warning number 3 in line 10:8:
+This document has a "title" tag but it does not specify an
+appropriate and/or descriptive title. Consider something
+like "About XYZ Company". The title is: "About". A good,
+keyword-relevant page title is very important for SEO.
+
+  10: <title>About</title>
+-------|||||
+
+[CSE] Message number 2 in line 10:2:
+Tip - A good title is important for search engine listings.
+Try to use keywords and search terms in the title but keep
+it readable and not too long. Don't just stuff keywords in
+the title. The first words in the title are more likely to
+result in higher rankings than subsequent words, so use
+important keywords at the very beginning when reasonable.
+The title should also be something that a user will want to
+click on when it's listed on a search results page. A good
+title is also important when a visitor bookmarks a page.
+Example: <title>Download CSE HTML Validator - Powerful HTML
+and Link Checking Software for Windows</title>. We recommend
+that the "title" tag be one of the first tags inside the
+"head" section (but after any meta charset or viewport
+tags).
+
+  10: <title>About</title>
+-------------|||||
+
+[CSE] Message number 3 in line 10:8:
+This document's title contains only 1 word. It may be
+inadequate for search engine purposes. A good title is
+important to your search engine rankings and listings.
+Optimal page title length is 5-15 words and no more than 60
+characters (Google typically displays the first 50-60
+characters but it's a good idea to keep titles under 55
+characters so they display properly most of the time). The
+title should contain relevant and descriptive phrases and/or
+relevant keywords and search terms while also remaining
+human-readable. If possible, use important keywords at the
+very beginning of the title.
+
+  11: </head>
+  12: 
+  13: <body>
+  14: <header>
+  15: 
+  16: 
+  17: <h1>About Simpson Pet Company</h1>
+
+  18: <a href="index.html">Home Page</a>
+---------------||||||||||
+
+[CSE] Message number 4 in line 18:10:
+If always serving this page from a web server (and not from
+a local file system), then it may be better not to specify
+the actual index document name "index.html". Consider using
+href="./" instead. Visit
+http://webtips.dan.info/subdir.html#LinkHome for more
+information about the benefits of this method. NOTE: This is
+just a suggestion and is not required by any official
+standard.
+
+  19: <a href="hours_directions.html">Hours and Directions</a>
+  20: <a href="news.html">News</a>
+  21: <a href="pets_avaliable.html">Pets Available</a>
+  22: <a href="pets_sold.html">Pets Sold</a>
+  23:   <h2>About the Company</h2>
+  24: </header>
+
+  25: <img src="img/Cats.jpg" alt="Cats" />
+-------|||
+
+[CSE] Message number 5 in line 25:2:
+It is recommended that the "height" and "width" attributes
+be used with the "img" element so browsers can leave the
+correct amount of space for them while downloading the image
+(which can take more time on mobile networks and devices).
+This will also prevent issues and annoyances due to reflow
+when the image becomes available or if image downloading is
+disabled. This message is displayed up to 5 times.
+
+  25: <img src="img/Cats.jpg" alt="Cats" />
+-------|||
+
+[CSE] Message number 6 in line 25:2:
+Image searches can be a significant source of visitors and
+traffic. Therefore, try to use keywords when naming images,
+and separate keywords with hyphens (not underscores). This
+message is displayed only once.
+
+  25: <img src="img/Cats.jpg" alt="Cats" />
+-------|||
+
+[CSE] Message number 7 in line 25:2:
+[7] Ensure that the "img" element is rarely, if ever, used
+as a layout tool. Always use CSS for layout and positioning.
+For example, do not use "img" elements to display
+transparent images which rarely convey meaning and rarely
+add anything useful to the document. This message is
+displayed only once.
+
+  25: <img src="img/Cats.jpg" alt="Cats" />
+----------------||||||||||||
+
+[CSE] Message number 8 in line 25:11:
+[117] Both "height" and "width" attributes should be used
+with the "img" element. Recommend height="181" and
+width="150" for this image. Using these attributes generally
+result in faster and smoother (less jumpy) rendering. Using
+them is also considered to be good style.
+
+  26:   <p>While we attended Simpson College, we noticed that there was a lot of endangered Indianolan Brown Squirrels.</p>
+  27:   <p>After seeing a majority of these squirrels get hit by cars, chased off campus, and get so obese because of the lack of nut control, we knew we had to do something.</p>
+  28:   <p>We captured as many squirrels as possible and pawned them off and gave them to trusted friends.</p>
+  29:   <p>This is how the dream started. In the present day, we captured a wide variety of animals ranging from the smallest house cat, to the biggest moose.</p>
+  30:   <p>We here at the Simpson Pet Company can get you any animal you want at any given time, and that is a company guarantee.</p>
+  31: <footer>
+  32: <p>&copy; Copyright 2017 Simpson Pet Company</p>
+  33: </footer>
+  34: </body>
+  35: 
+  36: </html>
+
+[CSE] Comment number 1:
+[73] Section 508 accessibility checking is off.
+
+[CSE] Comment number 2:
+[73] WCAG 1.0 accessibility checking is off.
+
+[CSE] Comment number 3:
+[73] WCAG 2.0 accessibility checking is off.
+
+[CSE] Comment number 4:
+Accessibility checking is off. This program can help you
+make your web pages more accessible. An accessible page is
+one that more individuals can use, such as individuals who
+are blind or deaf. It can also increase the usefulness of
+your web page for individuals who browse the web using
+slower devices like older computers or wireless devices like
+mobile phones and PDAs. An accessible web site makes good
+business sense (and possibly good legal sense as well) and
+may even improve search engine rankings. You can enable or
+disable accessibility checking in the Validator Engine
+Options.
+
+[CSE] Comment number 5:
+Keyword density: Company (5x - 3.5%), Simpson (4x - 2.8%),
+About (3x - 2.1%), Pet (3x - 2.1%), Squirrels (3x - 2.1%),
+captured (2x - 1.4%), off (2x - 1.4%), Pets (2x - 1.4%),
+2017 (1x - 0.7%), animal (1x - 0.7%), animals (1x - 0.7%),
+attended (1x - 0.7%), Available (1x - 0.7%), because (1x -
+0.7%), biggest (1x - 0.7%), Brown (1x - 0.7%), campus (1x -
+0.7%), cars (1x - 0.7%), cat (1x - 0.7%), Cats (1x - 0.7%).
+Remember: Don't write SEO optimized content. Write for
+people, which is what search engines want. List limited to
+first 20 unique words. 63 words excluded.
+
+[CSE] Comment number 6:
+HTML5 document detected.
+
+[CSE] Comment number 7:
+Editing Tip: This document was specified as utf-8 encoded.
+Editing documents with the wrong encoding may cause document
+corruption. Ensure that any editor used to edit a document
+properly supports the document's encoding and properly loads
+it with the correct encoding. CSE HTML Validator's editor
+supports UTF-8 and other common encodings.
+
+[CSE] Comment number 8:
+[133] Mobility Tip #20 - Ensure that page content is
+suitable for use in a mobile context. Use clear and simple
+language and be brief and direct. Limit the content to what
+the user requested and provide appropriate (the most useful
+or desirable) information first. Don't overload the user
+with extraneous and excessive information and advertising.
+
+[CSE] Comment number 9:
+<meta name="description" content="(actual description)">
+should be used in the "head" section to provide a brief
+description of what is contained on this page. Although
+descriptions may not be used directly for rankings, search
+engines may display descriptions in search results, with
+bolding of the relevent keywords. Therefore, a good
+description can help boost click-through rates and thus
+increase traffic to a website. If you're using HTML
+Validator's integrated editor, then this can be added from
+the 'Tags' menu or from the HTML Inserter.
+
+[CSE] Comment number 10:
+Number of "a" links: 5, of which 0 (0.0%) have
+rel="nofollow". Use rel="nofollow" to tell search engines
+not to follow the link and tell Google not to transfer
+PageRank or anchor text across the link. Use rel="nofollow"
+for untrusted content, paid links, and crawl prioritization.
+Visit https://support.google.com/webmasters/answer/96569 for
+more information.
+
+[CSE] Comment number 11:
+No italicizing, emphasizing, bolding, or strong tags were
+used. Emphasizing or italicizing keywords (with the "em"
+element) may improve rankings. Similarly, using strong text
+or bolding keywords (with the "strong" element) may also
+improve rankings.
+
+[CSE] Comment number 12:
+[113] Random Search Engine Tip #38 - USE A SITEMAP.XML FILE.
+Use a sitemap.xml file that lists all indexable pages, and
+update it regularly. Ensure that search engines know about
+it. A website can still be indexed without this file, but a
+sitemap.xml file can help crawlers find content that they
+wouldn't have otherwise found.
+
+[CSE] Comment number 13:
+0.01s, 0 errors, 3 warnings, 8 messages, 13 validator
+comments, 36 lines, 22 elements (with 19 end tags), 2
+document comments, 1 character reference, 141 words spell
+checked (0 in comments).
+
+--------------------------------------------------
+
+<html> (5)
+| <head> (7)
+| | <link /> (8)
+| | <meta /> (9)
+| | <title> (10) </title> (10)
+| </head> (11)
+| <body> (13)
+| | <header> (14)
+| | | <h1> (17) </h1> (17)
+| | | <a> (18) </a> (18)
+| | | <a> (19) </a> (19)
+| | | <a> (20) </a> (20)
+| | | <a> (21) </a> (21)
+| | | <a> (22) </a> (22)
+| | | <h2> (23) </h2> (23)
+| | </header> (24)
+| | <img /> (25)
+| | <p> (26) </p> (26)
+| | <p> (27) </p> (27)
+| | <p> (28) </p> (28)
+| | <p> (29) </p> (29)
+| | <p> (30) </p> (30)
+| | <footer> (31)
+| | | <p> (32) </p> (32)
+| | </footer> (33)
+| </body> (34)
+</html> (36)
