@@ -1,14 +1,16 @@
-header {
+body {
   text-align: left;
   max-width: 600px;
   background-color: #B6E8DA;
 
 }
+header {
+  text-align: center;
+}
 h1 {
   background-color: #009CFF;
   color: #000;
   width: 600px;
-  display: inline;
   width: 100%;
 }
 ul {
