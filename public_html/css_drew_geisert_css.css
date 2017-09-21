@@ -5,9 +5,36 @@ p {
 }
 
 body {
-    background-color: #DAECF3
+
+    background-color: #184169;
+    font-family: arial, sans-serif;
 }
 
 header {
-    color: #012D41
+    color: #9cb1bf
 }
+
+nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    padding-right: 14px;
+    padding-left: 14px;
+    
+}
+
+nav li {
+
+    float: left;
+}
+nav li a {
+
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #9cb1bf
+}
+
+
