@@ -6,8 +6,30 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="pet_company_css.css">
     <title>Simpson Pet Company</title>
+
+    <!-- This says our CSS is compatible with phones, and phones
+         don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+
+    <!-- If you don't like how bootstrap looks, go here and see other themes
+         that are available:
+         https://bootswatch.com/
+
+         You can replace the 'optional theme' with links from the page below
+         to get that theme:
+         https://www.bootstrapcdn.com/bootswatch/
+    -->
+
+    <!-- Our custom stylesheet that WE write. We need this to not have our
+         text appear under the nav bar. -->
+    <link rel="stylesheet" href="pet_company_css.css">
 
     <style>
       .h1_class {
@@ -22,47 +44,60 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="h1_class">Simpson Pet Company</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="about.html">About</a>
-          </li>
+    <!-- Navigation Bar- "navbar-default" to get the proper header color-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
 
-          <li>
-            <a href="hours_directions.html">Hours and Directions</a>
-          </li>
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-          <li>
-            <a href="news.html">News</a>
-          </li>
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">Simpson Pet Company</a>
+        </div>
 
-          <li>
-            <a href="pets_avaliable.html">Pets Available</a>
-          </li>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hours_directions.html">Hours and Directions</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="pets_avaliable.html">Pets Available</a></li>
+            <li><a href="pets_sold.html">Pets Sold</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="sign_up.html">Sign Up</a></li>
+            <li><a href="sign_up.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-          <li>
-            <a href="pets_sold.html">Pets Sold</a>
-          </li>
-        </ul>
-      <br/>
-      </nav>
-      <img src="img/Cats.jpg" alt="Image of Cats"/>
-      <h2>We sell <em>all</em> animals!</h2>
-    </header>
-    
-    <h4>Welcome to the Simpson Pet Company!</h4>
-    <section>
-      <p>We sell a variety of animals, in all shapes and sizes.</p>
-      <p>Below are links to the other pages on our site.</p>
-      <p>You can see that there is a page that talks about our company and how it got started.</p>
-      <p>Next there is a page that tells you our hours and the directions on how to get to our business.</p>
-      <p>After that you will see our news page which talks about our recent or upcoming events we might have.</p>
-      <p>Next you can see that we have a page that lists our pets that our currently available.</p>
-      <p>Lastly, you will see that there is a page that talks about the recent pets we've sold.</p>
-    </section>
+    <div class="container-fluid">
+      <section class="below_menu_container">
+        <header>
+          <img src="img/Cats.jpg" alt="Image of Cats"/>
+          <h2>Welcome to the Simpson Pet Company!</h2>
+        </header>
+          <p>We sell a variety of animals, in all shapes and sizes.</p>
+          <p>Below are links to the other pages on our site.</p>
+          <p>You can see that there is a page that talks about our company and how it got started.</p>
+          <p>Next there is a page that tells you our hours and the directions on how to get to our business.</p>
+          <p>After that you will see our news page which talks about our recent or upcoming events we might have.</p>
+          <p>Next you can see that we have a page that lists our pets that our currently available.</p>
+          <p>Lastly, you will see that there is a page that talks about the recent pets we've sold.</p>
+      </section>
+    </div>
     <footer>&copy; Copyright 2017 Simpson Pet Company</footer>
+
+    <!-- Scripts required to make Bootstrap work better. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 
 </html>
