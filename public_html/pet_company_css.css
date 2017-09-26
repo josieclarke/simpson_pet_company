@@ -35,3 +35,15 @@ img {
   border-style: inset;
   border-width: 10px;
 }
+thead {
+  text-decoration: underline;
+}
+tfoot {
+  background-color: #FFF;
+}
+
+
+.floating {
+  float: left;
+  max-width: 300px;
+}
