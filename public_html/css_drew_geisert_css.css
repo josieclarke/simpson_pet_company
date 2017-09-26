@@ -1,6 +1,8 @@
 p {
     color: #9CB1BF;
     padding: 20px;
+    border-style: solid;
+    border-color: #9cb1bf
     
 }
 
@@ -75,3 +77,8 @@ td {
     color: #9cb1bf;
     
     }
+table {
+    border-style: solid;
+    border-color: #9bc1bf;
+
+}
