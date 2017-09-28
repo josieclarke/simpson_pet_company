@@ -49,21 +49,21 @@ nav li a {
 
 .odd {
 
-    background-color: transparent;
-    color: #9cb1bf;
+    color: #121c25;
     
     }
     
 .even {
 
-    background-color: #2d587b;
-    color: #9cb1bf;
+    background-color: transparent;
+    color: #121C25;
+    border-color: #121c25
     
     }
 
 h2 {
 
-    color: #9cb1bf
+    color: #9cb1bf;
     
     }
 
@@ -81,4 +81,9 @@ table {
     border-style: solid;
     border-color: #9bc1bf;
 
+}
+
+.btn-success {
+    
+    background-image: linear-gradient, #5cb85c;
 }
