@@ -4,107 +4,119 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="pet_company_css.css">
-  <title>Pet's Sold</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Pet's Sold</title>
 
-<body>
-    <header>
-    <h1>Simpson Pet Company</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home Page</a>
-           </li>
+    <!-- This says our CSS is compatible with phones, and phones
+      don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <li>
-              <a href="hours_directions.html">Hours and Directions</a>
-            </li>
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-            <li>
-              <a href="news.html">News</a>
-            </li>
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
 
-            <li>
-              <a href="pets_sold.html">Pets Sold</a>
-            </li>
+    <!-- Our custom stylesheet that WE write. We need this to not have our
+      text appear under the nav bar. This also centers the header.-->
+    <link rel="stylesheet" href="pet_company_css.css"> 
+  </head>
 
-            <li>
-              <a href="sign_up.html">Sign Up</a>
-            </li>
+  <body>
+    <!-- Navigation Bar- "navbar-default" to get the proper header color-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">Simpson Pet Company</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hours_directions.html">Hours and Directions</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="pets_avaliable.html">Pets Available</a></li>
+            <li class="active"><a href="pets_sold.html">Pets Sold</a></li>
           </ul>
-      <br/>
-      </nav>
-        <img src="img/Cats.jpg" alt="Image of Cats"/>
-      <h2>Pets That Need a Home</h2>
-     </header>
-  <table>
-  	<thead>
-  		<tr>
-  			<th>Moose</th>
-  			<th>Marmot</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><img src="img/Moose.jpg" alt="Moose" /></td>
-        <td><img src="img/Marmot.jpg" alt="Marmot" /></td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td>Marty the Moose was found in Estes Park drowning in the Big Thompson River. Our trapper Banjo Sydney was able to rescue Marty and got him relocated to Ranger Smith at the Rocky Mountain National Park Headquarters.</td>
-        <td>Marty the Marmot was found stuck in a snow bank on top of Emerald Lake. Our trapper Banjo Sydney found Marty and relocated him to Ranger Smith at the Rocky Mountain National Park Headquarters.</td>
-      </tr>
-    </tfoot>
-  </table>
-  <table>
-    <thead>
-      <tr>
-  			<th>Squirrel</th>
-  			<th>Horse</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><img src="img/Squirrel.jpg" alt="Squirel" /></td>
-        <td><img src="img/Horse.jpg" alt="Horse" /></td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td>Stormy the squirrel was being attacked by students at Irving Elementary near Simpson. Our trapper Banjo Sydney was able to fend off Stormy from his attackers and got him relocated to the Simpson Pet Company.</td>
-        <td>Harry the Horse was found running around Estes Park in the Streets. Our trapper Banjo Sydney was able to control Henry and got him relocated to Ranger Smith at the Rock Mountain National Park Headquarters.</td>
-      </tr>
-    </tfoot>
-  </table>
-  <table>
-    <thead>
-      <tr>      
-  			<th>Deer</th>
-  			<th>Elk</th>
-  		</tr>
-  	</thead>
-  	<tbody>
-  		<tr>
-  			<td><img src="img/Deer.jpg" alt="Deer" /></td>
-  			<td><img src="img/Elk.jpg" alt="Elk" /></td>
-    </tr>
-  	</tbody>
-    <tfoot>
-      <tr>
-        <td>Danny the Deer was found eating groceries in the Fareway in Indianola, Iowa. Our trapper, Banjo Sydney was able to lead Danny out of the store and got him relocated with the Simpson Pet Company.</td>
-        <td>Elly the Elk was found ramming her head against a tree trunk in the forests of the Rocky Mountain National Park. Our trapper Banjo Sydney was able to stop Elly from hurting herself and got her relocated with Ranger Smith at the Rock Mountain National Park Headquarters.</td>
-      </tr>
-    </tfoot>
-  </table>
-
-  <footer>
-    <p>&copy; Copyright 2017 Simpson Pet Company</p>
-  </footer>
-</body>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="sign_up.html">Sign Up</a></li>
+            <li><a href="login.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <section class="below_menu_container">
+        <header>
+          <img src="img/Cats.jpg" alt="Image of Cats"/>
+          <h2>Pets That Need a Home</h2>
+        </header>
+    
+        <table>
+        	<tbody>
+        		<tr>
+        			<td><b>Moose</b></td>
+        			<td><b>Marmot</b></td>
+            </tr>
+            <tr>
+              <td><img src="img/Moose.jpg" alt="Moose" /></td>
+              <td><img src="img/Marmot.jpg" alt="Marmot" /></td>
+            </tr>
+            <tr>
+              <td>Marty the Moose was found in Estes Park drowning in the Big Thompson River. Our trapper Banjo Sydney was able to rescue Marty and got him relocated to Ranger Smith at the Rocky Mountain National Park Headquarters.</td>
+              <td>Marty the Marmot was found stuck in a snow bank on top of Emerald Lake. Our trapper Banjo Sydney found Marty and relocated him to Ranger Smith at the Rocky Mountain National Park Headquarters.</td>
+            </tr>
+            <tr>
+              <td><br/></td>
+            </tr>
+            <tr>
+        			<td><b>Squirrel</b></td>
+        			<td><b>Horse</b></td>
+            </tr>
+            <tr>
+              <td><img src="img/Squirrel.jpg" alt="Squirel" /></td>
+              <td><img src="img/Horse.jpg" alt="Horse" /></td>
+            </tr>
+            <tr>
+              <td>Stormy the squirrel was being attacked by students at Irving Elementary near Simpson. Our trapper Banjo Sydney was able to fend off Stormy from his attackers and got him relocated to the Simpson Pet Company.</td>
+              <td>Harry the Horse was found running around Estes Park in the Streets. Our trapper Banjo Sydney was able to control Henry and got him relocated to Ranger Smith at the Rock Mountain National Park Headquarters.</td>
+            </tr>
+            <tr>
+              <td><br/></td>
+            </tr>
+            <tr>      
+        			<td><b>Deer</b></td>
+        			<td><b>Elk</b></td>
+        		</tr>
+        		<tr>
+        			<td><img src="img/Deer.jpg" alt="Deer" /></td>
+        			<td><img src="img/Elk.jpg" alt="Elk" /></td>
+          </tr>
+          <tr>
+            <td>Danny the Deer was found eating groceries in the Fareway in Indianola, Iowa. Our trapper, Banjo Sydney was able to lead Danny out of the store and got him relocated with the Simpson Pet Company.</td>
+            <td>Elly the Elk was found ramming her head against a tree trunk in the forests of the Rocky Mountain National Park. Our trapper Banjo Sydney was able to stop Elly from hurting herself and got her relocated with Ranger Smith at the Rock Mountain National Park Headquarters.
+            </td>
+          </tr>
+          </tfoot>
+        </table>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2017 Simpson Pet Company</p>
+    </footer>
+  </body>
 
 
 </html>

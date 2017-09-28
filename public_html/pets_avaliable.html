@@ -4,78 +4,88 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="pet_company_css.css">
-  <title>Pets That Need a Home</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Pets That Need a Home</title>
 
-<body>
-    <header>
-    <h1>Simpson Pet Company</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home Page</a>
-           </li>
+    <!-- This says our CSS is compatible with phones, and phones
+      don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <li>
-              <a href="hours_directions.html">Hours and Directions</a>
-            </li>
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-            <li>
-              <a href="news.html">News</a>
-            </li>
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
 
-            <li>
-              <a href="pets_sold.html">Pets Sold</a>
-            </li>
+    <!-- Our custom stylesheet that WE write. We need this to not have our
+      text appear under the nav bar. This also centers the header.-->
+    <link rel="stylesheet" href="pet_company_css.css">     
+  </head>
 
-            <li>
-              <a href="sign_up.html">Sign Up</a>
-            </li>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">Simpson Pet Company</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hours_directions.html">Hours and Directions</a></li>
+            <li><a href="news.html">News</a></li>
+            <li class="active"><a href="pets_avaliable.html">Pets Available</a></li>
+            <li><a href="pets_sold.html">Pets Sold</a></li>
           </ul>
-      <br/>
-      </nav>
-        <img src="img/Cats.jpg" alt="Image of Cats"/>
-      <h2>Pets That Need a Home</h2>
-     </header>
-  <h3>Karl the Kangaroo</h3>
-  <img class="floating" src="img/Kangaroo.jpg" alt="Kangaroo" />
-  <section>
-    <p>Karl was found in Australian Mountains in Australia. He was separated from his parents but was found by our trapper Banjo Sydney.</p>
-  </section>
-  <br/>
-  <h3 style="clear:left">Carlos the Crocodile</h3>
-  <img class="floating" src="img/Croc.jpg" alt="Crocodile"/>
-  <section>
-  <p>Carlos was found in the swamps of Sydney in Sydney, Australia. 
-  Our trapper Banjo Sydney was able to help him get out of the dense swamp and was relocated back at the Simpson Pet Company.</p>
-  </section>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="sign_up.html">Sign Up</a></li>
+            <li><a href="login.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <section class="below_menu_container">
+        <header>
+          <img src="img/Cats.jpg" alt="Image of Cats"/>
+        <h2>Pets That Need a Home</h2>
+        </header>
+        <h3>Karl the Kangaroo</h3>
+        <img class="floating col-xs-3" src="img/Kangaroo.jpg" alt="Kangaroo" />
+        <p class="col-xs-9">Karl was found in Australian Mountains in Australia. He was separated from his parents but was found by our trapper Banjo Sydney.</p>
 
-  <h3 style="clear:left">Camilla the Cassowary</h3>
-  <img class="floating" src="img/Cassowary.jpg" alt="Cassowary"/>
-  <section>
-  <p>Camilla was found being chased by a pack of koala's. 
-  Our trapper Banjo Sydney rescued her and is now relocated at the Simpson Pet Company.</p>
-  </section>
-
-  <h3 style="clear:left">Shane the Sheep</h3>
-  <img class="floating" src="img/Sheep.jpg" alt="Sheep"/>
-  <section>
-  <p>Shane was discovered on an abandoned farm on the outskirts of Sydney, Australia by our trapper Banjo Sydney.
-  Since being discovered, Shane has been relocated to the Simpson Pet Company.</p>
-  </section>
-
-  <h3 style="clear:left">Penny the Pelican</h3>
-  <img class="floating" src="img/Pelican.jpg" alt="Pelican"/>
-  <section>
-  <p>Penny was discovered off the shores of the Great Barrier Reef covered garbage. Our trapper Banjo Sydney was able to help have her relocated to the Simpson Pet Company.</p>
-  </section>
-<footer>
-  <p style="clear:left">&copy; Copyright 2017 Simpson Pet Company</p>
-</footer>
-</body>
+        <h3 style="clear:left">Carlos the Crocodile</h3>
+        <img class="floating col-xs-3" src="img/Croc.jpg" alt="Crocodile"/>
+        <p class="col-xs-9">Carlos was found in the swamps of Sydney in Sydney, Australia. Our trapper Banjo Sydney was able to help him get out of the dense swamp and was relocated back at the Simpson Pet Company.</p>
 
 
+        <h3 style="clear:left">Camilla the Cassowary</h3>
+        <img class="floating col-xs-3" src="img/Cassowary.jpg" alt="Cassowary"/>
+        <p class="col-xs-9">Camilla was found being chased by a pack of koala's. Our trapper Banjo Sydney rescued her and is now relocated at the Simpson Pet Company.</p>
+
+        <h3 style="clear:left">Shane the Sheep</h3>
+        <img class="floating col-xs-3" src="img/Sheep.jpg" alt="Sheep"/>
+        <p class="col-xs-9">Shane was discovered on an abandoned farm on the outskirts of Sydney, Australia by our trapper Banjo Sydney.Since being discovered, Shane has been relocated to the Simpson Pet Company.</p>
+
+        <h3 style="clear:left">Penny the Pelican</h3>
+        <img class="floating col-xs-3" src="img/Pelican.jpg" alt="Pelican"/>
+        <p class="col-xs-9">Penny was discovered off the shores of the Great Barrier Reef covered garbage. Our trapper Banjo Sydney was able to help have her relocated to the Simpson Pet Company.</p>
+      </section>
+    </div>
+    <footer>
+      <p style="clear:left">&copy; Copyright 2017 Simpson Pet Company</p>
+    </footer>
+  </body>
 </html>
